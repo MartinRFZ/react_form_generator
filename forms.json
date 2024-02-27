@@ -1,0 +1,135 @@
+{
+  "title": "User Creation",
+  "action": "http://localhost:3000/server.php",
+  "method": "POST",
+  "data": [
+    {
+      "section": {
+        "title": "User Data",
+        "class": "col-md-12",
+        "fields": [
+          {
+            "field": {
+              "id": "name_id",
+              "class": "form-control",
+              "label": "Name(s)",
+              "type": "text",
+              "data": "string",
+              "mask": "^[a-zA-ZÀ-ÖØ-öø-ÿ']+([ ][a-zA-ZÀ-ÖØ-öø-ÿ']+)*$",
+              "placeholder": "Enter your name",
+              "required": true,
+              "name": "name",
+              "LowerLimit": 25,
+              "UpperLimit": 6
+            }
+          },
+          {
+            "field": {
+              "id": "lastname_id",
+              "class": "form-control",
+              "label": "Lastname(s)",
+              "type": "text",
+              "data": "string",
+              "mask": "^[a-zA-ZÀ-ÖØ-öø-ÿ']+([ ][a-zA-ZÀ-ÖØ-öø-ÿ']+)*$",
+              "placeholder": "Enter your lastname",
+              "required": true,
+              "name": "lastname",
+              "LowerLimit": 25,
+              "UpperLimit": 6
+            }
+          },
+          {
+            "field": {
+              "id": "email_id",
+              "class": "form-control",
+              "label": "Email",
+              "type": "email",
+              "data": "string",
+              "mask": "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[A-Za-z]+$",
+              "placeholder": "Enter your email",
+              "required": true,
+              "name": "email",
+              "LowerLimit": 25,
+              "UpperLimit": 2
+            }
+          },
+          {
+            "field": {
+              "id": "password_id",
+              "class": "form-control",
+              "label": "Password",
+              "type": "password",
+              "data": "string",
+              "mask": "^(?=.\\d)(?=.[a-z])(?=.[A-Z])(?=.[\\W]).{6,20}$",
+              "placeholder": "Enter your password",
+              "required": true,
+              "name": "password",
+              "LowerLimit": "",
+              "UpperLimit": ""
+            }
+          },
+          {
+            "field": {
+              "id": "confirmpassword_id",
+              "class": "form-control",
+              "label": "Confirm Password",
+              "type": "password",
+              "data": "string",
+              "mask": "^(?=.\\d)(?=.[a-z])(?=.[A-Z])(?=.[\\W]).{6,20}$",
+              "placeholder": "Enter your password",
+              "required": true,
+              "name": "confirmPassword",
+              "LowerLimit": "",
+              "UpperLimit": ""
+            }
+          },
+          {
+            "field": {
+              "id": "phonenumber_id",
+              "class": "form-control",
+              "label": "Phone",
+              "type": "text",
+              "data": "string",
+              "mask": "^\\+[0-9]{2} ?[0-9]{3} ?[0-9]{3} ?[0-9]{4}$",
+              "placeholder": "Enter your phone: +52 000 000 0000",
+              "required": true,
+              "name": "phone",
+              "LowerLimit": "",
+              "UpperLimit": ""
+            }
+          },
+          {
+            "field": {
+              "id": "borndate_id",
+              "class": "form-control",
+              "label": "Date of Birth",
+              "type": "date",
+              "data": "date",
+              "mask": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+              "placeholder": "Enter your birth date",
+              "required": true,
+              "name": "birthdate",
+              "LowerLimit": 18,
+              "UpperLimit": ""
+            }
+          },
+          {
+            "field": {
+              "name": "checkbox",
+              "id": "checkbox_id",
+              "class": "form-check-input",
+              "type": "checkbox",
+              "label": "I accept the terms and conditions",
+              "required": true,
+              "value": "true",
+              "checked": false,
+              "LowerLimit": "",
+              "optionIndex": 0,
+              "UpperLimit": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
